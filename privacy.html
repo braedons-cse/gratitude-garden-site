@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gratitude Garden Privacy</title>
+<meta name="description" content="What Gratitude Garden collects, why, who processes it, and how to delete it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site"><span class="sprout" aria-hidden="true">🌱</span><a href="./">Gratitude Garden</a></header>
+
+  <h1>Privacy policy</h1>
+  <p class="meta">Last updated 4 October 2026</p>
+  <p class="lede">Your journal is personal. This page says plainly what the app collects, why, who
+    handles it for us, and how to make it all go away.</p>
+
+  <div class="card">
+    <h3>The short version</h3>
+    <ul>
+      <li>We store your account, your journal and your garden so they're there on every device you sign in to.</li>
+      <li>No ads, no advertising ID, no analytics or tracking tools, and we never sell your data.</li>
+      <li>Crash reports are scrubbed on your phone before they're sent, and carry no account ID.</li>
+      <li>Deleting an entry erases its words and photo. Deleting your account erases everything,
+        in the app or <a href="delete-account.html">on the web</a>.</li>
+      <li>Your journal is not end-to-end encrypted. It is private to your account, but it is
+        stored on our servers in a form we could technically read (see <a href="#access">who can see it</a>).</li>
+    </ul>
+  </div>
+
+  <nav class="toc card" aria-label="On this page">
+    <strong>On this page</strong>
+    <ol>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#collect">What we collect and why</a></li>
+      <li><a href="#not">What we don't collect</a></li>
+      <li><a href="#permissions">Phone permissions</a></li>
+      <li><a href="#processors">Who processes your data</a></li>
+      <li><a href="#access">Who can see your data</a></li>
+      <li><a href="#security">How it's protected</a></li>
+      <li><a href="#retention">Keeping and deleting</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes and contact</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="who">1. Who we are</h2>
+  <p>Gratitude Garden is an Android app for writing down what you're grateful for and growing a
+    small garden as you do. It is made by {{DEVELOPER_NAME}} ("we", "us"), who is responsible for
+    your data under this policy. Questions or requests: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>.</p>
+
+  <h2 id="collect">2. What we collect and why</h2>
+
+  <h3>Your account</h3>
+  <ul>
+    <li><strong>Email address</strong>: to sign you in and to identify your account if you contact us.</li>
+    <li><strong>Display name</strong>: the name you choose at sign-up, shown on your garden.</li>
+    <li><strong>Password</strong>: stored only as a one-way hash by our sign-in provider. We can't see it.</li>
+  </ul>
+
+  <h3>Your journal</h3>
+  <ul>
+    <li><strong>What you write</strong>: the text of each entry.</li>
+    <li><strong>Mood</strong> (optional): a rating from 1 (rough) to 5 (great), if you pick one.</li>
+    <li><strong>Photo</strong> (optional): one per entry, only the photo you choose. The app
+      re-saves it on your phone before uploading, which removes all hidden metadata, including
+      any location.</li>
+    <li><strong>When and how</strong>: the date and time of each entry, whether it was typed or
+      dictated, and your phone's time zone name (for example "Europe/Berlin"), so "today" means
+      your today. A time zone tells us your rough region, not where you are.</li>
+  </ul>
+
+  <h3>Your garden</h3>
+  <p>Coins, plants and where they're planted, things you've bought, streaks and streak freezes,
+    level and XP, and settings such as your daily entry limit. These make the game work.</p>
+
+  <h3>Crash reports</h3>
+  <p>When the app crashes, freezes, or hits an error it didn't expect, it sends a report to
+    Sentry so we can fix it. A report contains the technical error, your phone model and Android
+    version, the app version, and a random ID created for this installation (not linked to your
+    account). Before anything is sent, the app removes sign-in tokens, email addresses, account
+    and entry IDs, web addresses' query details, and any journal text that could appear in an
+    error. Sentry is set not to store your IP address or a location derived from it.
+    No screenshots or screen recordings are ever taken.</p>
+
+  <h3>Sign-up statistics</h3>
+  <p>We count, from the data above, how new accounts get on in their first week (for example,
+    how many wrote again on their second day). Nothing extra is collected for this, and only we
+    can see it.</p>
+
+  <h3>Why we're allowed to (for people in the EU and UK)</h3>
+  <ul>
+    <li>Your account, journal and garden: to provide the app you asked for (contract).</li>
+    <li>Crash reports and sign-up statistics: our legitimate interest in keeping the app working
+      and improving it, kept as small as we can make it.</li>
+    <li>Mood, photos, notifications and the microphone: only when you choose to use them (consent),
+      which you can withdraw at any time by not using them, removing them, or turning them off.</li>
+  </ul>
+
+  <h2 id="not">3. What we don't collect</h2>
+  <ul>
+    <li>No location from GPS or your network.</li>
+    <li>No contacts, calendar, call logs, or other apps' data.</li>
+    <li>No advertising ID, no ads, and no analytics or tracking tools.</li>
+    <li>No audio recordings (see the microphone below).</li>
+    <li>We never sell your data or share it with advertisers, and we don't use it to train AI models.</li>
+  </ul>
+
+  <h2 id="permissions">4. Phone permissions</h2>
+  <ul>
+    <li><strong>Microphone</strong> (optional): for speaking an entry instead of typing it. The
+      app uses your phone's speech recognition service (on most phones, Google's), which turns
+      your voice into text. That service receives the audio under its own privacy policy; the app
+      only receives the text, and never records or stores audio.</li>
+    <li><strong>Notifications</strong> (optional): for the daily reminder you can turn on in the
+      app. Replying from the notification saves an entry like writing one in the app.</li>
+    <li><strong>Camera and photos</strong>: the app has no camera or photo-library permission.
+      Taking a photo opens your camera app, and picking one opens Android's photo picker; the app
+      only receives the one photo you choose.</li>
+    <li><strong>Internet and start-up</strong>: to sync, and to set your reminder again after the
+      phone restarts.</li>
+  </ul>
+
+  <h2 id="processors">5. Who processes your data</h2>
+  <p>These companies process data on our behalf, only to provide their service to us:</p>
+  <ul>
+    <li><strong>Supabase</strong>: sign-in, the database holding your journal and garden, and
+      photo storage. Servers in the United States.</li>
+    <li><strong>Sentry</strong> (Functional Software, Inc.): crash reports. Stored in the
+      European Union (Germany).</li>
+    <li><strong>Have I Been Pwned</strong>: when you create an account, the app checks whether
+      your new password has appeared in a known data breach. Only the first 5 characters of a
+      one-way hash of the password are sent, never the password itself, and the match happens
+      on your phone.</li>
+    <li><strong>GitHub</strong> hosts these web pages, and the account-deletion page loads its
+      sign-in code from <strong>jsDelivr</strong>. Like any website host, they may log visitors'
+      IP addresses.</li>
+  </ul>
+  <p>If you live outside the United States, your account and journal are transferred to and
+    stored in the US. Where the law requires it, these transfers rely on our providers'
+    standard contractual clauses.</p>
+
+  <h2 id="access">6. Who can see your data</h2>
+  <p>No other user. The app has no social features: nobody else can see your garden or your
+    journal.</p>
+  <p>As the operator, we have administrative access to the database, which means we could
+    technically read stored entries. We don't browse them. We look at an account's data only to
+    fix a problem you've asked us about, to keep the service secure, or when the law requires
+    it.</p>
+  <p>We would disclose data to authorities only when legally required to, and if the app were
+    ever transferred to someone else, this policy would go with it and you would be told first.</p>
+
+  <h2 id="security">7. How it's protected</h2>
+  <ul>
+    <li>Everything travels over encrypted connections (HTTPS).</li>
+    <li>The database only lets each account reach its own rows, and photos sit in private
+      storage that only their owner's account can reach.</li>
+    <li>The copy of your journal on your phone is left out of Android backups and phone-to-phone
+      transfers, and is wiped when you sign out.</li>
+    <li>New passwords must be at least 8 characters with upper and lower case letters, a number
+      and a symbol, and must not appear in a known breach.</li>
+  </ul>
+  <p>No system is perfectly secure. If a breach ever affected your data, we would tell you and,
+    where required, the authorities.</p>
+
+  <h2 id="retention">8. Keeping and deleting</h2>
+  <ul>
+    <li><strong>An entry</strong>: edit or delete it any time. Deleting it erases its text, mood
+      and photo from our servers as soon as the deletion reaches them (straight away when you're
+      online, otherwise the next time you are). A bare record of the day it was written stays,
+      so daily limits and streaks keep working, until you delete your account.</li>
+    <li><strong>Your account</strong>: delete it in the app (Me &rarr; Delete account) or
+      <a href="delete-account.html">on the web</a> without the app. Everything goes at once: your
+      account, journal, photos, garden, coins and stats. Deleting in the app also wipes the copy on
+      that phone; after deleting on the web, uninstall the app or log out of it to remove the
+      phone's copy.</li>
+    <li><strong>Crash reports</strong> are kept by Sentry for up to 90 days.</li>
+    <li>Our providers' backups and logs may hold copies for a short time after deletion before
+      they're overwritten.</li>
+  </ul>
+  <p>We keep your account for as long as you have it. We don't delete inactive accounts.</p>
+
+  <h2 id="rights">9. Your rights</h2>
+  <p>You can ask us for a copy of your data, to correct it, or to delete it, and you can object
+    to how we use it. Depending on where you live (for example under the GDPR in the EU and UK,
+    or the CCPA in California) you have these rights by law, but we offer them to everyone.
+    Email <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a> from your account's email
+    address and we'll reply within 30 days. You can also complain to your local data protection
+    authority.</p>
+
+  <h2 id="children">10. Children</h2>
+  <p>Gratitude Garden isn't meant for children under 13 (or the minimum age for this kind of
+    service where you live). We don't knowingly collect their data; if you think a child has
+    an account, tell us and we'll delete it.</p>
+
+  <h2 id="changes">11. Changes and contact</h2>
+  <p>If this policy changes, we'll update the date at the top. If a change affects what we
+    collect or who sees it, we'll also tell you in the app before it takes effect.</p>
+  <p>Contact: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+
+  <footer class="site">
+    <a href="./">Gratitude Garden</a> &middot; <a href="delete-account.html">Delete your account</a>
+  </footer>
+</div>
+</body>
+</html>

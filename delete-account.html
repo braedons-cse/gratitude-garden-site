@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Account</title>
+<meta name="description" content="Permanently delete your Gratitude Garden account and everything in it, without the app.">
+<meta name="referrer" content="no-referrer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site"><span class="sprout" aria-hidden="true">🌱</span><a href="./">Gratitude Garden</a></header>
+
+  <h1>Delete your account</h1>
+  <p class="lede">This permanently erases your Gratitude Garden account and everything in it.
+    You can also do it in the app: Me &rarr; Delete account.</p>
+
+  <div class="card">
+    <h3>What gets deleted</h3>
+    <ul>
+      <li>Your account: email address, display name and password</li>
+      <li>Every journal entry, with its mood and photo</li>
+      <li>Your garden, coins, purchases, streaks and level</li>
+    </ul>
+    <p>It happens at once and can't be undone. Copies in our providers' backups and logs are
+      overwritten shortly after, and crash reports (which aren't linked to your account) expire
+      within 90 days. See the <a href="privacy.html#retention">privacy policy</a>.</p>
+  </div>
+
+  <!-- Step 1: sign in, to prove the account is yours. -->
+  <form id="signin" class="card" novalidate>
+    <h3>Sign in to continue</h3>
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="username" required>
+    <label for="password">Password</label>
+    <input id="password" type="password" autocomplete="current-password" required>
+    <button type="submit" id="signin-btn">Continue</button>
+    <div id="signin-msg" class="message error" role="alert" hidden></div>
+  </form>
+
+  <!-- Step 2: say it twice. -->
+  <form id="confirm" class="card" novalidate hidden>
+    <h3>Delete <span id="who"></span>?</h3>
+    <p>Type <strong>DELETE</strong> to confirm. There's no undo.</p>
+    <label for="typed">Confirmation</label>
+    <input id="typed" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false">
+    <button type="submit" id="delete-btn" class="danger" disabled>Delete forever</button>
+    <button type="button" id="cancel-btn" class="quiet">Cancel</button>
+    <div id="confirm-msg" class="message" role="status" hidden></div>
+  </form>
+
+  <!-- Step 3: done. -->
+  <div id="done" class="card" role="status" hidden>
+    <h3>Your account is gone</h3>
+    <p>Everything listed above has been erased from our servers. If the app is still installed
+      on a phone, uninstall it (or log out of it) to remove the copy kept on that phone.</p>
+  </div>
+
+  <p class="meta">Forgot your password, or something not working? Email
+    <a href="mailto:{{CONTACT_EMAIL}}?subject=Delete%20my%20Gratitude%20Garden%20account">{{CONTACT_EMAIL}}</a>
+    from your account's email address and we'll delete it for you within 30 days.</p>
+
+  <footer class="site">
+    <a href="./">Gratitude Garden</a> &middot; <a href="privacy.html">Privacy policy</a>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js"
+        integrity="sha384-Rj26LVGvoeRVR6+mwQmFfcR3QOBEwT+ZmuCWpuiqeTzJpCs0ER4ITAWGb4Hiy3Ok"
+        crossorigin="anonymous"></script>
+<script src="delete.js"></script>
+</body>
+</html>
